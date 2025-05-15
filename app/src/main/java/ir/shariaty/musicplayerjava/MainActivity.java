@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
   ImageView play,prev,next;
   TextView songTitle;
   SeekBar mSeekBarTime, mSeekBarVol;
-    static MediaPlayer mediaPlayer;
+    static MediaPlayer mMediaPlayer;
     int currentIndex = 0;
 
     @Override
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mMediaPlayer = android.media.MediaPlayer.create(getApplicationContext(), songs.get(currentIndex));
-        play.setOnClickListener(new view.OnClickListener() {
+        play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mMediaPlayer != null && mMediaPlayer.isPlaying()){
