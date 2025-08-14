@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import ir.shariaty.musicplayer.R;
 
 public class MainActivity extends AppCompatActivity {
-  ImageView play,prev,next;
-  TextView songTitle;
-  SeekBar mSeekBarTime, mSeekBarVol;
+    ImageView play,prev,next;
+    TextView songTitle;
+    SeekBar mSeekBarTime, mSeekBarVol;
     static MediaPlayer mMediaPlayer;
     int currentIndex = 0;
 
